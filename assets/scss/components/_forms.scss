@@ -44,6 +44,7 @@
     width: 100%;
     padding: 0 baseUnit(3);
     margin: baseUnit(6) auto 0 auto;
+    max-height: baseUnit(24);
 
     &:before {
       opacity: 0;
