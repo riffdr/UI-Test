@@ -1,0 +1,108 @@
+@import '_inputs';
+
+.form {
+  @include display_flex;
+  @include column_direction;
+  @include flex_wrap;
+  @include box-sizing(border-box);
+  width: 100%;
+  color:$white;
+  text-align: left;
+
+  @media all and (-ms-high-contrast:none) {
+    @include row_direction;
+  }
+
+  @include media_query($screen-sm) {
+    @include row_direction;
+
+  }
+
+  .fieldset {
+    @include display_flex;
+    @include box-sizing(border-box);
+    @include justify_content_spacebetween;
+    @include row_direction;
+    @include flex_wrap;
+    width: 100%;
+    min-width: inherit;
+    border: none;
+    margin: auto;
+
+    @include media_query($screen-sm) {
+      @include flex-basis(49%);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__field {
+    @include box-sizing(border-box);
+    @include display_flex;
+    @include column_direction;
+    @include flex(1 0 47%);
+    width: 100%;
+    padding: 0 baseUnit(3);
+    margin: baseUnit(6) auto 0 auto;
+
+    &:before {
+      opacity: 0;
+      content: "";
+
+      position: absolute;
+      @include animate_it(opacity, 0.3s, ease-in-out);
+    }
+
+    &--success {
+      position: relative;
+      color: $white;
+      @include success_icon;
+      &:before {
+        @include display_flex;
+        @include align_items_center;
+        @include justify_content_center;
+        @include border-radius(100%);
+        opacity: 1;
+        position: absolute;
+        height: baseUnit(10);
+        width:  baseUnit(10);
+        bottom: baseUnit(3);
+        margin: auto;
+        border: 2px solid $white;
+        text-align: center;
+        font-size: baseUnit(5);
+        right: baseUnit(6);
+      }
+    }
+
+    &--error {
+      .form__input {
+        @include animate_it(all, 0.3s, ease-in-out);
+        @include box-shadow(0, 0,  baseUnit(10), 0, $red_transparent);
+        border: 2px solid $red_transparent;
+      }
+    }
+
+    &--radio {
+      @include justify_content_center;
+      @include flex-basis(0);
+      align-self: flex-end;
+      height: baseUnit(27);
+      padding-top: 0;
+      margin-bottom: 0;
+
+     .form__field__subcontainer {
+        padding: baseUnit(2) 0 0 baseUnit(5);
+        width: baseUnit(33);
+      }
+    }
+  }
+
+  &__label {
+    color: $white_transparent;
+
+    &:not(.radio__label){
+      padding: 0 0 baseUnit(2) 0;
+    }
+  }
+}

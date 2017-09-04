@@ -1,0 +1,5 @@
+$px_base_value: 3px;
+
+@function baseUnit( $value ) {
+    @return $value * $px_base_value;
+}

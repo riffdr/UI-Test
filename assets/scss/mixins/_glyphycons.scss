@@ -1,0 +1,503 @@
+@import "../config/_font-faces";
+
+@mixin initGlyphicons {
+  font-family: 'll-icon-font';
+  font-style: normal;
+  font-weight: normal!important;
+  font-variant: normal!important;
+  text-transform: none!important;
+  text-decoration: none!important;
+  speak: none;
+  line-height: 1;
+  font-size: 1em;
+  opacity: 1;
+  @include font-smoothing;
+}
+
+.glyphicon:before {
+  @include initGlyphicons;
+}
+
+.glyphicon-arrow-67:before {
+  content: "\33";
+}
+
+.glyphicon-arrow-65:before {
+  content: "\31";
+}
+
+.glyphicon-bin-2:before {
+  content: "\41";
+}
+
+.glyphicon-pencil-2:before {
+  content: "\42";
+}
+
+.glyphicon-power-2:before {
+  content: "\43";
+}
+
+.glyphicon-preview-1:before {
+  content: "\44";
+}
+
+.glyphicon-profile-1:before {
+  content: "\45";
+}
+
+.glyphicon-play-1:before {
+  content: "\47";
+}
+
+.glyphicon-pause-1:before {
+  content: "\48";
+}
+
+.glyphicon-next-1:before {
+  content: "\49";
+}
+
+.glyphicon-forward-1:before {
+  content: "\4a";
+}
+
+.glyphicon-backward-1:before {
+  content: "\4b";
+}
+
+.glyphicon-previous-1:before {
+  content: "\4c";
+}
+
+.glyphicon-record-1:before {
+  content: "\4d";
+}
+
+.glyphicon-stop-1:before {
+  content: "\4e";
+}
+
+.glyphicon-eject-1:before {
+  content: "\4f";
+}
+
+.glyphicon-delete-1:before {
+  content: "\50";
+}
+
+.glyphicon-add-1:before {
+  content: "\51";
+}
+
+.glyphicon-check-2:before {
+  content: "\52";
+}
+
+.glyphicon-check-circle-2:before {
+  content: "\53";
+}
+
+.glyphicon-delete-3:before {
+  content: "\54";
+}
+
+.glyphicon-add-3:before {
+  content: "\55";
+}
+
+.glyphicon-minus-3:before {
+  content: "\56";
+}
+
+.glyphicon-clock-2:before {
+  content: "\57";
+}
+
+.glyphicon-information:before {
+  content: "\58";
+}
+
+.glyphicon-question-mark:before {
+  content: "\59";
+}
+
+.glyphicon-alert-1:before {
+  content: "\5a";
+}
+
+.glyphicon-alert-2:before {
+  content: "\46";
+}
+
+.glyphicon-dice-2:before {
+  content: "\30";
+}
+
+.glyphicon-arrow-65:before {
+  content: "\31";
+}
+
+.glyphicon-arrow-66:before {
+  content: "\32";
+}
+
+.glyphicon-arrow-67:before {
+  content: "\33";
+}
+
+.glyphicon-arrow-68:before {
+  content: "\34";
+}
+
+.glyphicon-arrow-right:before {
+  content: "\35";
+}
+
+.glyphicon-arrow-left:before {
+  content: "\36";
+}
+
+.glyphicon-diamond:before {
+  content: "\61";
+}
+
+.glyphicon-bank-note-2:before {
+  content: "\62";
+}
+
+.glyphicon-credit-card:before {
+  content: "\63";
+}
+
+.glyphicon-piggy-bank:before {
+  content: "\64";
+}
+
+.glyphicon-calendar-2:before {
+  content: "\65";
+}
+
+.glyphicon-wallet-1:before {
+  content: "\66";
+}
+
+.glyphicon-trophy:before {
+  content: "\68";
+}
+
+.glyphicon-cards-2:before {
+  content: "\6b";
+}
+
+.glyphicon-logo:before {
+  content: "\71";
+}
+
+.glyphicon-bookmark-1:before {
+  content: "\67";
+}
+
+.glyphicon-bookmark-4:before {
+  content: "\69";
+}
+
+.glyphicon-edit-3:before {
+  content: "\6a";
+}
+
+.glyphicon-award-3:before {
+  content: "\6c";
+}
+
+.glyphicon-award-4:before {
+  content: "\6d";
+}
+
+.glyphicon-heart-1:before {
+  content: "\6e";
+}
+
+.glyphicon-hand-like-2:before {
+  content: "\6f";
+}
+
+.glyphicon-present:before {
+  content: "\70";
+}
+
+.glyphicon-star-2:before {
+  content: "\72";
+}
+
+.glyphicon-magic-wand-2:before {
+  content: "\73";
+}
+
+.glyphicon-bubble-conversation-6:before {
+  content: "\74";
+}
+
+.glyphicon-chat-bubble-1:before {
+  content: "\75";
+}
+
+.glyphicon-smiley-happy-4:before {
+  content: "\76";
+}
+
+.glyphicon-call-3:before {
+  content: "\77";
+}
+
+.glyphicon-call-1:before {
+  content: "\78";
+}
+
+.glyphicon-megaphone-2:before {
+  content: "\79";
+}
+
+.glyphicon-address-1:before {
+  content: "\7a";
+}
+
+.glyphicon-mail-1:before {
+  content: "\37";
+}
+
+.glyphicon-mail-read:before {
+  content: "\38";
+}
+
+.glyphicon-user-add-2:before {
+  content: "\39";
+}
+
+.glyphicon-contacts-2:before {
+  content: "\21";
+}
+
+.glyphicon-user-2:before {
+  content: "\22";
+}
+
+.glyphicon-camera-front:before {
+  content: "\23";
+}
+
+.glyphicon-photo-1:before {
+  content: "\24";
+}
+
+.glyphicon-flag-1:before {
+  content: "\25";
+}
+
+.glyphicon-download-2:before {
+  content: "\26";
+}
+
+.glyphicon-upload-2:before {
+  content: "\27";
+}
+
+.glyphicon-megaphone-1:before {
+  content: "\28";
+}
+
+.glyphicon-rss-1:before {
+  content: "\29";
+}
+
+.glyphicon-refresh:before {
+  content: "\2a";
+}
+
+.glyphicon-setting-gear:before {
+  content: "\2b";
+}
+
+.glyphicon-bell:before {
+  content: "\2c";
+}
+
+.glyphicon-transfer:before {
+  content: "\2d";
+}
+
+.glyphicon-wrench:before {
+  content: "\2e";
+}
+
+.glyphicon-coins-2:before {
+  content: "\2f";
+}
+
+.glyphicon-hourglass-1:before {
+  content: "\3a";
+}
+
+.glyphicon-business-chart-1:before {
+  content: "\3b";
+}
+
+.glyphicon-chart-up:before {
+  content: "\3c";
+}
+
+.glyphicon-business-chart-2:before {
+  content: "\3d";
+}
+
+.glyphicon-pie-chart-2:before {
+  content: "\3e";
+}
+
+.glyphicon-globe-1:before {
+  content: "\3f";
+}
+
+.glyphicon-house-2:before {
+  content: "\40";
+}
+
+.glyphicon-database:before {
+  content: "\5b";
+}
+
+.glyphicon-ipad-2:before {
+  content: "\5d";
+}
+
+.glyphicon-imac:before {
+  content: "\5e";
+}
+
+.glyphicon-list-2:before {
+  content: "\5f";
+}
+
+.glyphicon-my-activity-icon:before {
+  content: "\60";
+}
+
+.glyphicon-roulette-icon:before {
+  content: "\7b";
+}
+
+.glyphicon-slots-icon:before {
+  content: "\7c";
+}
+
+.glyphicon-arrow-circle-30:before {
+  content: "\7d";
+}
+
+.glyphicon-arrow-circle-29:before {
+  content: "\7e";
+}
+
+.glyphicon-file-1:before {
+  content: "\5c";
+}
+
+.glyphicon-lock-2:before {
+  content: "\e000";
+}
+
+.glyphicon-lock-unlock-2:before {
+  content: "\e001";
+}
+
+.glyphicon-link-3:before {
+  content: "\e002";
+}
+
+.glyphicon-crosshair-2:before {
+  content: "\e003";
+}
+
+.glyphicon-magnifier:before {
+  content: "\e004";
+}
+
+.glyphicon-delete-2:before {
+  content: "\e005";
+}
+
+.glyphicon-key-1:before {
+  content: "\e006";
+}
+
+.glyphicon-printer:before {
+  content: "\e007";
+}
+
+.glyphicon-lightbulb-2:before {
+  content: "\e008";
+}
+
+.glyphicon-arrow-down:before {
+  content: "\e009";
+}
+
+.glyphicon-arrow-up:before {
+  content: "\e00a";
+}
+
+.glyphicon-calendar-1:before {
+  content: "\e00b";
+}
+
+.glyphicon-minus-1:before {
+  content: "\e00c";
+}
+
+.glyphicon-pin-1:before {
+  content: "\e00e";
+}
+
+.glyphicon-reply-mail-2:before {
+  content: "\e00d";
+}
+
+.glyphicon-shield-3:before {
+  content: "\e00f";
+}
+
+.glyphicon-star-1:before {
+  content: "\e010";
+}
+
+.glyphicon-shuffle:before {
+  content: "\e011";
+}
+
+.glyphicon-info-icon:before {
+  content: "\e012";
+}
+
+.glyphicon-info-icon-1:before {
+  content: "\e013";
+}
+
+.glyphicon-facebook:before {
+  content: "\e015";
+}
+
+.glyphicon-gplus:before {
+  content: "\e014";
+}
+
+.glyphicon-shopping-cart-4:before {
+  content: "\q";
+}
+
+.glyphicon-twitter:before {
+  content: "\e01d";
+}
+
+.glyphicon-icon-star:before {
+  content: "\e01c";
+}

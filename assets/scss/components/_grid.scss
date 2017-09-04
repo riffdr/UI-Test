@@ -1,0 +1,46 @@
+html{
+  height: 100%;
+  @include display_flex;
+}
+
+body{
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  @media all and (-ms-high-contrast:none) {
+    height: 100%;
+  }
+}
+.page {
+  @include display_flex;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: $black;
+  color:$white;
+}
+
+.wrapper {
+  @include display_flex;
+  @include box-sizing(border-box);
+  @include justify_content_center;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $transparent;
+}
+.container {
+  @include display_flex;
+  @include justify_content_center;
+  width: 100%;
+  background-color: $transparent;
+  &.article{
+    @include column_direction;
+    @include content_center;
+    width: 100%;
+    .paragraph {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

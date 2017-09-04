@@ -1,0 +1,52 @@
+@import "../config/breakpoints";
+
+@mixin media_query ($breakpoint : $screen-sm) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin retina_media_query {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin box-sizing ($value) {
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  box-sizing: $value;
+}
+
+@mixin box-shadow($val1 : 0, $val2: 0, $val3: 0, $val4: 0, $color: white, $inset:"") {
+  -moz-box-shadow: $val1 $val2 $val3 $val4 $color unquote($inset);
+  -webkit-box-shadow: $val1 $val2 $val3 $val4 $color unquote($inset);
+  box-shadow: $val1 $val2 $val3 $val4 $color unquote($inset);
+}
+
+@mixin border-radius($value: 100%) {
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin appearance($value: none) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
+@mixin padding-start ($value) {
+  -webkit-padding-start : $value;
+  -moz-padding-start: $value;
+  padding-start: $value;
+}
+
+
+

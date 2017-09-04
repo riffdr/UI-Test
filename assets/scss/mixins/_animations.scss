@@ -1,0 +1,16 @@
+@mixin animate_it($what : all, $speed : 0.25s,  $timingfunction : ease){
+  will-change: $what;
+  -moz-transition: $what $speed $timingfunction;
+  -o-transition: $what $speed $timingfunction;
+  -webkit-transition: $what $speed $timingfunction;
+  -ms-transition: $what $speed $timingfunction;
+  transition: $what $speed $timingfunction;
+}
+
+@mixin disable_it{
+  @include animate_it;
+  *{
+    pointer-events:none!important;
+    cursor: default!important;
+  }
+}

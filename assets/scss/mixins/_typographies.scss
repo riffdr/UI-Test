@@ -1,0 +1,85 @@
+@import "../config/font-faces";
+
+@mixin actionFont{
+   font-family: 'action';
+}
+
+@mixin proximaNovaFont{
+  font-family: 'Proxima Nova';
+}
+
+@mixin proximaFontSemiBold{
+  font-family: 'proxima_nova_ltsemibold';
+}
+
+@mixin proximaFontThin{
+  font-family: 'proxima_nova_ltthin';
+}
+
+@mixin heading_1 {
+  //  @include proximaFontSemiBold;
+  @include actionFont;
+    color: $white;
+    font-size: 30px;
+    line-height: 30px;
+  @include media_query($screen-md) {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+    @include media_query($screen-lg) {
+        font-size: 90px;
+        line-height: 90px;
+        font-weight: bold;
+    }
+}
+
+@mixin paragraph {
+    color: $white;
+    font-size: 18px;
+    @include proximaFontSemiBold;
+}
+
+@mixin cta {
+  color: $white;
+  font-size: 24px;
+  @include proximaFontSemiBold;
+}
+
+
+@mixin input_label {
+  color: $white;
+  font-size: 12px;
+   @include proximaNovaFont;
+}
+
+
+@mixin input_field {
+  color: $white;
+  font-size: 18px;
+  font-weight: normal;
+  @include proximaFontSemiBold;
+}
+
+h1, .heading--h1 {
+  @include heading_1;
+  font-weight: normal;
+}
+
+p, .paragraph {
+  @include paragraph;
+}
+.form__label{
+  @include input_label;
+}
+
+input,.form__input{
+  @include input_field;
+}
+
+@mixin font-smoothing () {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}

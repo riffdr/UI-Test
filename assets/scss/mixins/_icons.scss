@@ -1,0 +1,18 @@
+@mixin arrow_down{
+  @include initGlyphicons;
+  content: "\31";
+}
+
+@mixin arrow_left{
+  @include initGlyphicons;
+  &::before {
+    content: "\33";
+  }
+}
+
+@mixin success_icon{
+  &::before {
+    @include initGlyphicons;
+    content: "\52";
+  }
+}

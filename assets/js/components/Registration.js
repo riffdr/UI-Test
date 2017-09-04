@@ -198,7 +198,7 @@ export default class Registration extends React.Component {
     <article className="container article">
          <a className="link link--back glyphicon glyphicon-arrow-67"></a>
          <h1 className="heading heading--h1">{this.langLib.h1}</h1>
-         <p className="paragraph">{this.state.inputs.first_name.value + ' ' + this.langLib.first_paragraph}</p>
+         <p className="paragraph">{(this.state.inputs.first_name.value ? this.state.inputs.first_name.value : '') + ' ' + this.langLib.first_paragraph}</p>
          <div className="form form--registration">
             <div className="fieldset">
                 <div className={"form__field form__field--name " + ' '+ (this.state.inputs.first_name.stateClassName ? this.state.inputs.first_name.stateClassName : '')}>

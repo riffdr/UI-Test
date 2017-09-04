@@ -1,0 +1,8 @@
+.button {
+  @include cta;
+  @include display_flex;
+  &:hover {
+    cursor: pointer;
+    outline: baseUnit(1) solid $white;
+  }
+}
