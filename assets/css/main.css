@@ -1,0 +1,1109 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'action';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/action/action.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/action/action.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltthin';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.svg#proxima_nova_ltthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'll-icon-font';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.svg#ll-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+h1, .heading--h1 {
+  font-family: 'action';
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal; }
+  @media only screen and (min-width: 1024px) {
+    h1, .heading--h1 {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold; } }
+  @media only screen and (min-width: 1440px) {
+    h1, .heading--h1 {
+      font-size: 90px;
+      line-height: 90px;
+      font-weight: bold; } }
+
+p, .paragraph {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'proxima_nova_ltsemibold'; }
+
+.form__label {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Proxima Nova'; }
+
+input, .form__input {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'proxima_nova_ltsemibold'; }
+
+@font-face {
+  font-family: 'action';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/action/action.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/action/action.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Semibold-webfont.svg#proxima_nova_ltsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltthin';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.woff2") format("woff2"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/proxima_nova/Mark Simonson - Proxima Nova Thin-webfont.svg#proxima_nova_ltthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'll-icon-font';
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.eot");
+  src: url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.eot?#iefix") format("embedded-opentype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.woff") format("woff"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.ttf") format("truetype"), url("http://www.mikel-zarate.com/mavrix/assets/fonts/ll-icon-font/ll-icon-font.svg#ll-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.glyphicon:before {
+  font-family: 'll-icon-font';
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  speak: none;
+  line-height: 1;
+  font-size: 1em;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always; }
+
+.glyphicon-arrow-67:before {
+  content: "\33"; }
+
+.glyphicon-arrow-65:before {
+  content: "\31"; }
+
+.glyphicon-bin-2:before {
+  content: "\41"; }
+
+.glyphicon-pencil-2:before {
+  content: "\42"; }
+
+.glyphicon-power-2:before {
+  content: "\43"; }
+
+.glyphicon-preview-1:before {
+  content: "\44"; }
+
+.glyphicon-profile-1:before {
+  content: "\45"; }
+
+.glyphicon-play-1:before {
+  content: "\47"; }
+
+.glyphicon-pause-1:before {
+  content: "\48"; }
+
+.glyphicon-next-1:before {
+  content: "\49"; }
+
+.glyphicon-forward-1:before {
+  content: "\4a"; }
+
+.glyphicon-backward-1:before {
+  content: "\4b"; }
+
+.glyphicon-previous-1:before {
+  content: "\4c"; }
+
+.glyphicon-record-1:before {
+  content: "\4d"; }
+
+.glyphicon-stop-1:before {
+  content: "\4e"; }
+
+.glyphicon-eject-1:before {
+  content: "\4f"; }
+
+.glyphicon-delete-1:before {
+  content: "\50"; }
+
+.glyphicon-add-1:before {
+  content: "\51"; }
+
+.glyphicon-check-2:before {
+  content: "\52"; }
+
+.glyphicon-check-circle-2:before {
+  content: "\53"; }
+
+.glyphicon-delete-3:before {
+  content: "\54"; }
+
+.glyphicon-add-3:before {
+  content: "\55"; }
+
+.glyphicon-minus-3:before {
+  content: "\56"; }
+
+.glyphicon-clock-2:before {
+  content: "\57"; }
+
+.glyphicon-information:before {
+  content: "\58"; }
+
+.glyphicon-question-mark:before {
+  content: "\59"; }
+
+.glyphicon-alert-1:before {
+  content: "\5a"; }
+
+.glyphicon-alert-2:before {
+  content: "\46"; }
+
+.glyphicon-dice-2:before {
+  content: "\30"; }
+
+.glyphicon-arrow-65:before {
+  content: "\31"; }
+
+.glyphicon-arrow-66:before {
+  content: "\32"; }
+
+.glyphicon-arrow-67:before {
+  content: "\33"; }
+
+.glyphicon-arrow-68:before {
+  content: "\34"; }
+
+.glyphicon-arrow-right:before {
+  content: "\35"; }
+
+.glyphicon-arrow-left:before {
+  content: "\36"; }
+
+.glyphicon-diamond:before {
+  content: "\61"; }
+
+.glyphicon-bank-note-2:before {
+  content: "\62"; }
+
+.glyphicon-credit-card:before {
+  content: "\63"; }
+
+.glyphicon-piggy-bank:before {
+  content: "\64"; }
+
+.glyphicon-calendar-2:before {
+  content: "\65"; }
+
+.glyphicon-wallet-1:before {
+  content: "\66"; }
+
+.glyphicon-trophy:before {
+  content: "\68"; }
+
+.glyphicon-cards-2:before {
+  content: "\6b"; }
+
+.glyphicon-logo:before {
+  content: "\71"; }
+
+.glyphicon-bookmark-1:before {
+  content: "\67"; }
+
+.glyphicon-bookmark-4:before {
+  content: "\69"; }
+
+.glyphicon-edit-3:before {
+  content: "\6a"; }
+
+.glyphicon-award-3:before {
+  content: "\6c"; }
+
+.glyphicon-award-4:before {
+  content: "\6d"; }
+
+.glyphicon-heart-1:before {
+  content: "\6e"; }
+
+.glyphicon-hand-like-2:before {
+  content: "\6f"; }
+
+.glyphicon-present:before {
+  content: "\70"; }
+
+.glyphicon-star-2:before {
+  content: "\72"; }
+
+.glyphicon-magic-wand-2:before {
+  content: "\73"; }
+
+.glyphicon-bubble-conversation-6:before {
+  content: "\74"; }
+
+.glyphicon-chat-bubble-1:before {
+  content: "\75"; }
+
+.glyphicon-smiley-happy-4:before {
+  content: "\76"; }
+
+.glyphicon-call-3:before {
+  content: "\77"; }
+
+.glyphicon-call-1:before {
+  content: "\78"; }
+
+.glyphicon-megaphone-2:before {
+  content: "\79"; }
+
+.glyphicon-address-1:before {
+  content: "\7a"; }
+
+.glyphicon-mail-1:before {
+  content: "\37"; }
+
+.glyphicon-mail-read:before {
+  content: "\38"; }
+
+.glyphicon-user-add-2:before {
+  content: "\39"; }
+
+.glyphicon-contacts-2:before {
+  content: "\21"; }
+
+.glyphicon-user-2:before {
+  content: "\22"; }
+
+.glyphicon-camera-front:before {
+  content: "\23"; }
+
+.glyphicon-photo-1:before {
+  content: "\24"; }
+
+.glyphicon-flag-1:before {
+  content: "\25"; }
+
+.glyphicon-download-2:before {
+  content: "\26"; }
+
+.glyphicon-upload-2:before {
+  content: "\27"; }
+
+.glyphicon-megaphone-1:before {
+  content: "\28"; }
+
+.glyphicon-rss-1:before {
+  content: "\29"; }
+
+.glyphicon-refresh:before {
+  content: "\2a"; }
+
+.glyphicon-setting-gear:before {
+  content: "\2b"; }
+
+.glyphicon-bell:before {
+  content: "\2c"; }
+
+.glyphicon-transfer:before {
+  content: "\2d"; }
+
+.glyphicon-wrench:before {
+  content: "\2e"; }
+
+.glyphicon-coins-2:before {
+  content: "\2f"; }
+
+.glyphicon-hourglass-1:before {
+  content: "\3a"; }
+
+.glyphicon-business-chart-1:before {
+  content: "\3b"; }
+
+.glyphicon-chart-up:before {
+  content: "\3c"; }
+
+.glyphicon-business-chart-2:before {
+  content: "\3d"; }
+
+.glyphicon-pie-chart-2:before {
+  content: "\3e"; }
+
+.glyphicon-globe-1:before {
+  content: "\3f"; }
+
+.glyphicon-house-2:before {
+  content: "\40"; }
+
+.glyphicon-database:before {
+  content: "\5b"; }
+
+.glyphicon-ipad-2:before {
+  content: "\5d"; }
+
+.glyphicon-imac:before {
+  content: "\5e"; }
+
+.glyphicon-list-2:before {
+  content: "\5f"; }
+
+.glyphicon-my-activity-icon:before {
+  content: "\60"; }
+
+.glyphicon-roulette-icon:before {
+  content: "\7b"; }
+
+.glyphicon-slots-icon:before {
+  content: "\7c"; }
+
+.glyphicon-arrow-circle-30:before {
+  content: "\7d"; }
+
+.glyphicon-arrow-circle-29:before {
+  content: "\7e"; }
+
+.glyphicon-file-1:before {
+  content: "\5c"; }
+
+.glyphicon-lock-2:before {
+  content: "\e000"; }
+
+.glyphicon-lock-unlock-2:before {
+  content: "\e001"; }
+
+.glyphicon-link-3:before {
+  content: "\e002"; }
+
+.glyphicon-crosshair-2:before {
+  content: "\e003"; }
+
+.glyphicon-magnifier:before {
+  content: "\e004"; }
+
+.glyphicon-delete-2:before {
+  content: "\e005"; }
+
+.glyphicon-key-1:before {
+  content: "\e006"; }
+
+.glyphicon-printer:before {
+  content: "\e007"; }
+
+.glyphicon-lightbulb-2:before {
+  content: "\e008"; }
+
+.glyphicon-arrow-down:before {
+  content: "\e009"; }
+
+.glyphicon-arrow-up:before {
+  content: "\e00a"; }
+
+.glyphicon-calendar-1:before {
+  content: "\e00b"; }
+
+.glyphicon-minus-1:before {
+  content: "\e00c"; }
+
+.glyphicon-pin-1:before {
+  content: "\e00e"; }
+
+.glyphicon-reply-mail-2:before {
+  content: "\e00d"; }
+
+.glyphicon-shield-3:before {
+  content: "\e00f"; }
+
+.glyphicon-star-1:before {
+  content: "\e010"; }
+
+.glyphicon-shuffle:before {
+  content: "\e011"; }
+
+.glyphicon-info-icon:before {
+  content: "\e012"; }
+
+.glyphicon-info-icon-1:before {
+  content: "\e013"; }
+
+.glyphicon-facebook:before {
+  content: "\e015"; }
+
+.glyphicon-gplus:before {
+  content: "\e014"; }
+
+.glyphicon-shopping-cart-4:before {
+  content: "\q"; }
+
+.glyphicon-twitter:before {
+  content: "\e01d"; }
+
+.glyphicon-icon-star:before {
+  content: "\e01c"; }
+
+.button {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'proxima_nova_ltsemibold';
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .button:hover {
+    cursor: pointer;
+    outline: 3px solid #fff; }
+
+.form__input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+  -webkit-box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+  box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0px 6px 0px 21px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid rgba(166, 255, 175, 0.2);
+  outline: none; }
+  .form__input::-ms-clear, .form__input::-ms-expand {
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: none;
+    marging: 0;
+    padding: 0; }
+  .form__input::placeholder {
+    color: #fff; }
+  .form__input:not(.radio__input) {
+    height: 54px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .form__input:not(.radio__input)::-webkit-clear-button, .form__input:not(.radio__input)::-webkit-calendar-picker-indicator, .form__input:not(.radio__input)::-webkit-outer-spin-button, .form__input:not(.radio__input)::-webkit-inner-spin-button {
+      display: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .form__input:not(.radio__input)[type="number"] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield; }
+  .form__input:focus {
+    will-change: all;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -moz-box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    -webkit-box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    border: 2px solid rgba(190, 255, 202, 0.4); }
+  .form__input:hover {
+    cursor: pointer; }
+
+.form__field__select {
+  position: relative; }
+  .form__field__select .select {
+    width: 100%;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none; }
+    .form__field__select .select__icon {
+      height: 18px;
+      width: 27px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 6px;
+      font-size: 15px; }
+      .form__field__select .select__icon:before {
+        font-size: 12px;
+        font-family: 'll-icon-font';
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        text-decoration: none !important;
+        speak: none;
+        line-height: 1;
+        font-size: 1em;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smooth: always;
+        content: "\31"; }
+    .form__field__select .select__option {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      background-color: #000000;
+      outline: none;
+      font-weight: normal;
+      white-space: pre;
+      min-height: 4px;
+      padding: 0;
+      color: #fff;
+      text-shadow: 0 0 0 #fff; }
+      .form__field__select .select__option:hover {
+        cursor: pointer; }
+  .form__field__select .select:focus ~ .select__icon:before {
+    content: "\32"; }
+
+.radio {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 9px; }
+  .radio__input {
+    display: none; }
+  .radio:hover {
+    cursor: pointer; }
+  .radio__button {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid rgba(148, 255, 164, 0.2);
+    -moz-box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    -webkit-box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    box-shadow: 0 0 30px 0 rgba(61, 119, 90, 0.44) ;
+    position: relative;
+    opacity: 1;
+    height: 18px;
+    width: 18px;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .radio__label {
+    padding-left: 6px;
+    line-height: 27px; }
+  .radio .radio__input ~ .radio__button:before {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; }
+  .radio .radio__input:checked ~ .radio__button:before {
+    will-change: all;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -moz-box-shadow: 0 0 0 6px #000000 inset;
+    -webkit-box-shadow: 0 0 0 6px #000000 inset;
+    box-shadow: 0 0 0 6px #000000 inset;
+    background-color: #fff; }
+
+.form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-box-direction: normal;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  color: #fff;
+  text-align: left; }
+  @media all and (-ms-high-contrast: none) {
+    .form {
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-direction: normal; } }
+  @media only screen and (min-width: 768px) {
+    .form {
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-direction: normal; } }
+  .form .fieldset {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+    min-width: inherit;
+    border: none;
+    margin: auto; }
+    @media only screen and (min-width: 768px) {
+      .form .fieldset {
+        -webkit-flex-basis: 49%;
+        flex-basis: 49%;
+        margin-top: 0;
+        margin-bottom: 0; } }
+  .form__field {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-box-direction: normal;
+    -moz-flex: 1 0 47%;
+    -ms-flex: 1 0 47%;
+    -webkit-flex: 1 0 47%;
+    flex: 1 0 47%;
+    width: 100%;
+    padding: 0 9px;
+    margin: 18px auto 0 auto; }
+    .form__field:before {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      will-change: opacity;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out; }
+    .form__field--success {
+      position: relative;
+      color: #fff; }
+      .form__field--success::before {
+        font-family: 'll-icon-font';
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        text-decoration: none !important;
+        speak: none;
+        line-height: 1;
+        font-size: 1em;
+        opacity: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smooth: always;
+        content: "\52"; }
+      .form__field--success:before {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        opacity: 1;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        bottom: 9px;
+        margin: auto;
+        border: 2px solid #fff;
+        text-align: center;
+        font-size: 15px;
+        right: 18px; }
+    .form__field--error .form__input {
+      will-change: all;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      -moz-box-shadow: 0 0 30px 0 rgba(200, 24, 0, 0.75) ;
+      -webkit-box-shadow: 0 0 30px 0 rgba(200, 24, 0, 0.75) ;
+      box-shadow: 0 0 30px 0 rgba(200, 24, 0, 0.75) ;
+      border: 2px solid rgba(200, 24, 0, 0.75); }
+    .form__field--radio {
+      justify-content: center;
+      -webkit-justify-content: center;
+      -webkit-flex-basis: 0;
+      flex-basis: 0;
+      align-self: flex-end;
+      height: 81px;
+      padding-top: 0;
+      margin-bottom: 0; }
+      .form__field--radio .form__field__subcontainer {
+        padding: 6px 0 0 15px;
+        width: 99px; }
+  .form__label {
+    color: rgba(255, 255, 255, 0.7); }
+    .form__label:not(.radio__label) {
+      padding: 0 0 6px 0; }
+
+html {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0; }
+  @media all and (-ms-high-contrast: none) {
+    body {
+      height: 100%; } }
+
+.page {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #000000;
+  color: #fff; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  -webkit-justify-content: center;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  width: 100%;
+  background-color: transparent; }
+  .container.article {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-box-direction: normal;
+    align-content: center;
+    -webkit-align-content: center;
+    width: 100%; }
+    .container.article .paragraph {
+      width: 100%;
+      text-align: center; }
+
+.registration * {
+  text-transform: uppercase; }
+.registration .wrapper {
+  z-index: 1;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  background-color: #000000;
+  background-image: url("http://www.mikel-zarate.com/mavrix/assets/img/backgrounds/kaboo_top.png"), url("http://www.mikel-zarate.com/mavrix/assets/img/backgrounds/kaboo_bottom.png");
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1321px auto, 1321px auto; }
+  .registration .wrapper::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin: auto;
+    top: 0;
+    bottom: 0; }
+    @media only screen and (min-width: 768px) {
+      .registration .wrapper::before {
+        background-image: url("http://www.mikel-zarate.com/mavrix/assets/img/backgrounds/aura.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.75; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .registration .wrapper {
+      background-image: url("http://www.mikel-zarate.com/mavrix/assets/img/backgrounds/kaboo_top@2x.png"), url("http://www.mikel-zarate.com/mavrix/assets/img/backgrounds/kaboo_bottom@2x.png"); } }
+.registration .article {
+  background-color: transparent;
+  margin: 30px 0 auto 0;
+  max-width: 1321px;
+  width: 100%;
+  position: relative;
+  padding-top: 0;
+  height: auto;
+  min-height: initial; }
+  @media only screen and (min-width: 768px) {
+    .registration .article {
+      margin-top: 78px;
+      padding-left: 81px;
+      padding-right: 81px;
+      padding-top: 15px;
+      padding-bottom: 15px; } }
+  @media only screen and (min-width: 1440px) {
+    .registration .article {
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -moz-box-shadow: 0 0 24px 0 rgba(148, 255, 164, 0.2) ;
+      -webkit-box-shadow: 0 0 24px 0 rgba(148, 255, 164, 0.2) ;
+      box-shadow: 0 0 24px 0 rgba(148, 255, 164, 0.2) ;
+      -moz-box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+      -webkit-box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+      box-shadow: 0 0 24px 0 rgba(61, 119, 90, 0.44) ;
+      border: 2px solid rgba(166, 255, 175, 0.2); } }
+  .registration .article .link--back {
+    position: absolute;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    top: 6px;
+    left: 15px; }
+    @media only screen and (min-width: 768px) {
+      .registration .article .link--back {
+        display: none; } }
+  .registration .article .heading--h1, .registration .article .paragraph {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center; }
+  .registration .article .heading--h1 {
+    padding: 0 3px 3px 3px;
+    margin: 0 auto 3px auto;
+    font-weight: normal; }
+  .registration .article .paragraph {
+    padding: 0 12px;
+    margin: 9px 0; }
+  .registration .article .form {
+    width: 100%;
+    max-width: 600px; }
+    @media only screen and (min-width: 768px) {
+      .registration .article .form {
+        max-width: 100%; } }
+    .registration .article .form--registration {
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      min-height: 400px;
+      overflow-y: visible; }
+    .registration .article .form .fieldset {
+      width: 100%;
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+      max-width: 540px;
+      padding: 0 18px; }
+      .registration .article .form .fieldset:last-of-type {
+        padding-bottom: 24px; }
+      @media only screen and (min-width: 1024px) {
+        .registration .article .form .fieldset {
+          padding-top: 9px;
+          padding-bottom: 9px;
+          margin-top: 0;
+          margin-bottom: 0;
+          -webkit-flex-basis: auto;
+          flex-basis: auto;
+          width: 47%;
+          max-width: 540px; }
+          .registration .article .form .fieldset:nth-child(odd) {
+            margin-right: 0; }
+          .registration .article .form .fieldset:nth-child(even) {
+            margin-left: 0; }
+          .registration .article .form .fieldset:last-of-type {
+            padding-bottom: 9px; } }
+    .registration .article .form__field--name {
+      max-width: 246px; }
+      @media all and (-ms-high-contrast: none) {
+        .registration .article .form__field--name {
+          max-width: 49%; } }
+    .registration .article .form__field--dob, .registration .article .form__field--city, .registration .article .form__field--telephone {
+      max-width: 309px; }
+    .registration .article .form__field--postcode, .registration .article .form__field--areaCode {
+      max-width: 189px; }
+      @media all and (-ms-high-contrast: none) {
+        .registration .article .form__field--postcode, .registration .article .form__field--areaCode {
+          max-width: 41%; } }
+    .registration .article .form__field--country {
+      -webkit-flex-basis: auto;
+      flex-basis: auto; }
+    .registration .article .form .button {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      -webkit-flex: 1 0 auto;
+      flex: 1 0 auto;
+      -moz-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.5) ;
+      -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.5) ;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.5) ;
+      color: #fff;
+      margin: 9px auto;
+      background-color: transparent;
+      max-width: 519px;
+      padding: 24px;
+      border: 6px solid transparent;
+      width: auto; }
+      @media all and (-ms-high-contrast: none) {
+        .registration .article .form .button {
+          width: 100%; } }
+      .registration .article .form .button:hover {
+        border-color: #fff; }
+
+body, body * {
+  font-family: 'Proxima Nova';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-rendering: optimizeLegibility; }
+
+/*# sourceMappingURL=main.css.map */

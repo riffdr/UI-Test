@@ -1,0 +1,8 @@
+//Enter if necessary your relative/absolute path address to retrieve pics, fonts, etc...
+$asset-base-path: 'http://www.mikel-zarate.com/mavrix/assets' !default;
+//$asset-base-path: '../assets' !default;
+//$asset-base-path: 'file:///C:/test_sites/mavrix_test/assets' !default;
+
+@function getAsset ( $resourceName ) {
+  @return $asset-base-path + $resourceName;
+}
